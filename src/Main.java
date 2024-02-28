@@ -6,20 +6,20 @@ public class Main {
         List<Integer> intList = Arrays.asList(1, 2, 5, 16, -1, -2, 0, 32, 3, 5, 8, 23, 4);
         List<Integer> newList = new ArrayList<>();
         for (int nList : intList) {
-            if (nList > 0) {
+            if (nList > 0 && nList % 2 == 0) {
                 newList.add(nList);
             }
         }
 
-        List<Integer> finalList = new ArrayList<>();
-        for (int fList : newList) {
-            if (fList % 2 == 0) {
-                finalList.add(fList);
-            }
-
-        }
-        Collections.sort(finalList);
-        System.out.println(finalList);
+//        List<Integer> finalList = new ArrayList<>();
+//        for (int fList : newList) {
+//            if (fList % 2 == 0) {
+//                finalList.add(fList);
+//            }
+//
+//        }
+        Collections.sort(newList);
+        System.out.println(newList);
 
 
     }
